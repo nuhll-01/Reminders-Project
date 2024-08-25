@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from reminders.views import(Login)
+from reminders.views import(Login, Main)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Login.as_view(), name='login')
+    path('', Login.as_view(), name='login'),
+    path('homepage/', Main.as_view(), name='homepage')
 ]
