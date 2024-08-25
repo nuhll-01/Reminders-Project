@@ -1,6 +1,11 @@
 #background-color {
-    background-color: rgb(242, 242, 242);
+    background: rgb(209, 212, 230);
 }
 #center-header {
     text-align: center;
+}
+
+form {
+    border-radius: 20px;
+    background-color: white;
 }
